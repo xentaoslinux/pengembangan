@@ -1,5 +1,0 @@
-#!/bin/bash
-
-killall ccsm
-cat /usr/share/xentaos/xentadesktop/xenta.dconf | dconf load /org/compiz/profiles/xenta/
-window-manager-launcher

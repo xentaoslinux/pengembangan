@@ -1,5 +1,6 @@
 # Ignore
 amd64/*.iso
+amd64/*.list
 amd64/root
 amd64/dvd
 amd64/bugs
@@ -8,14 +9,20 @@ amd64/dvd
 amd64/log
 
 i386/*.iso
+i386/*.deb
 i386/root
 i386/dvd
 i386/dvd
 i386/bugs
 i386/deb
 i386/dvd
+i386/*.txt
 i386/log
+i386/packages/*
+i386/update/*
 
 unstable64
 unstable32
+
+old
 

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-sudo rm -rf /usr/lib/xentaos/xentaDesktop
-sudo cp -R usr /
-xentadesktop
