@@ -18,7 +18,7 @@ i386/deb
 i386/dvd
 i386/*.txt
 i386/log
-i386/packages/*
+i386/packages
 i386/update/*
 
 unstable64
