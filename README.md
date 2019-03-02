@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Pengembangan
 |**Team**|**Mission**|**Progress**|
 |:---:|:---:|:---:|
@@ -32,7 +31,3 @@ Pemasangan Perangkat Lunak melalui APT (Debian/Ubuntu/Linux Mint/Xenta OS).
  * Memasang Perangkat Lunak yang dibutuhkan.
 > ***Kebijakan:**  
 >  * Diijinkan menggunakan Distro selain Xenta OS dengan syarat memasang Xenta OS secara Virtual atau Dual Boot.
-=======
-# xentadesktop
-[Main] Paket Desktop Konfigurasi Xenta OS.
->>>>>>> 1ccadfdb39a39a7584422bf8c6077c0fa04df3c9
