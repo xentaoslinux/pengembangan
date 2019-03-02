@@ -1,27 +1,22 @@
-# Ignore
+# Ignore From Lokal
 amd64/*.iso
+amd64/*.iso.sha1sum
+amd64/*.iso.md5msum
 amd64/*.list
+amd64/*.txt
+amd64/*.manifest
 amd64/root
 amd64/dvd
-amd64/bugs
 amd64/deb
-amd64/dvd
-amd64/log
+amd64/mnt
 
 i386/*.iso
-i386/*.deb
+i386/*.iso.sha1sum
+i386/*.iso.md5msum
+i386/*.list
+i386/*.txt
+i386/*.manifest
 i386/root
 i386/dvd
-i386/dvd
-i386/bugs
 i386/deb
-i386/dvd
-i386/*.txt
-i386/log
-i386/update/*
-
-unstable64
-unstable32
-
-old
-
+i386/mnt
