@@ -13,15 +13,15 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 versi="2.0LTS"
-codename=arok
+codename=batik
 de=xfce
 version_kernel="4.13.0-19"
 jahitan=preview
-dir_project=/home/$(whoami)/xentaos/pengembangan/i386/
-dir_root=/home/$(whoami)/xentaos/pengembangan/i386/root
-dir_dvd=/home/$(whoami)/xentaos/pengembangan/i386/dvd
-dir_iso_release=/home/$(whoami)/xentaos/perilisan/release/i386/
-dir_iso_tester=/home/$(whoami)/xentaos/perilisan/tester/i386/
+dir_project=/home/$(whoami)/XentaOS/pengembangan/i386/
+dir_root=/home/$(whoami)/XentaOS/pengembangan/i386/root
+dir_dvd=/home/$(whoami)/XentaOS/pengembangan/i386/dvd
+dir_iso_release=/home/$(whoami)/XentaOS/perilisan/release/i386/
+dir_iso_tester=/home/$(whoami)/XentaOS/perilisan/tester/i386/
 figlet makeiso.sh
 sudo rm -rf dvd/casper/initrd.lz
 sudo cp root/boot/initrd.img-$version_kernel-generic dvd/casper/initrd.lz
