@@ -20,11 +20,12 @@ dir_root=/home/$(whoami)/XentaOS/pengembangan/amd64/root
 dir_dvd=/home/$(whoami)/XentaOS/pengembangan/amd64/dvd
 dir_iso_release=/home/$(whoami)/XentaOS/perilisan/release/amd64/
 dir_iso_tester=/home/$(whoami)/XentaOS/perilisan/tester/amd64/
-figlet continue.sh
+figlet make.sh
 echo " Xenta Distro Builder"
 echo " "
-sudo cp /etc/resolv.conf root/etc/
-sudo mount --bind /dev/ root/dev
-sudo chroot root
-# mount -t proc none /proc && mount -t sysfs none /sys && mount -t devpts none /dev/pts
-# export HOME=/root && export LC_ALL=C
+mkdir dvd deb mnt
+sudo mount -o loop ./*.iso mnt
+sudo rsync --exclude=/casper/filesystem.squashfs -a ./mnt/ ./dvd
+sudo unsquashfs ./mnt/casper/filesystem.squashfs
+sudo mv ./squashfs-root ./root
+sudo umount ./mnt
