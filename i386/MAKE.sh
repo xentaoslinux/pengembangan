@@ -20,12 +20,12 @@ dir_root=/home/project/pengembangan/amd64/root
 dir_dvd=/home/project/pengembangan/amd64/dvd
 dir_iso_release=/home/project/perilisan/release/amd64/
 dir_iso_tester=/home/project/perilisan/tester/amd64/
-figlet continue.sh
+figlet make.sh
 echo " Xenta Distro Builder"
 echo " "
 mkdir dvd deb mnt
-sudo mount -o loop ./*.iso ./mnt
-sudo rsync --exclude=/casper/filesystem.squashfs -a ./mnt ./dvd
+sudo mount -o loop ./*.iso mnt
+sudo rsync --exclude=/casper/filesystem.squashfs -a ./mnt/ ./dvd
 sudo unsquashfs ./mnt/casper/filesystem.squashfs
 sudo mv ./squashfs-root ./root
 sudo umount ./mnt
