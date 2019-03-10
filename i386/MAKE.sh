@@ -15,11 +15,11 @@
 versi="2.0LTS"
 codename=batik
 de=xfce
-dir_project=/home/$(whoami)/XentaOS/pengembangan/amd64/
-dir_root=/home/$(whoami)/XentaOS/pengembangan/amd64/root
-dir_dvd=/home/$(whoami)/XentaOS/pengembangan/amd64/dvd
-dir_iso_release=/home/$(whoami)/XentaOS/perilisan/release/amd64/
-dir_iso_tester=/home/$(whoami)/XentaOS/perilisan/tester/amd64/
+dir_project=/home/project/pengembangan/amd64/
+dir_root=/home/project/pengembangan/amd64/root
+dir_dvd=/home/project/pengembangan/amd64/dvd
+dir_iso_release=/home/project/perilisan/release/amd64/
+dir_iso_tester=/home/project/perilisan/tester/amd64/
 figlet continue.sh
 echo " Xenta Distro Builder"
 echo " "

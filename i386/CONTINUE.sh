@@ -15,11 +15,11 @@
 versi="2.0LTS"
 codename=batik
 de=xfce
-dir_project=/home/$(whoami)/XentaOS/pengembangan/i386
-dir_root=/home/$(whoami)/XentaOS/pengembangan/i386/root
-dir_dvd=/home/$(whoami)/XentaOS/pengembangan/i386/dvd
-dir_iso_release=/home/$(whoami)/XentaOS/perilisan/release/i386/
-dir_iso_tester=/home/$(whoami)/XentaOS/perilisan/tester/i386/
+dir_project=/home/project/pengembangan/i386
+dir_root=/home/project/pengembangan/i386/root
+dir_dvd=/home/project/pengembangan/i386/dvd
+dir_iso_release=/home/project/perilisan/release/i386/
+dir_iso_tester=/home/project/perilisan/tester/i386/
 figlet continue.sh
 echo " Xenta Distro Builder"
 echo " "

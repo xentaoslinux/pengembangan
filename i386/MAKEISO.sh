@@ -17,12 +17,14 @@ codename=batik
 de=xfce
 version_kernel="4.13.0-19"
 jahitan=preview
-dir_project=/home/$(whoami)/XentaOS/pengembangan/i386/
-dir_root=/home/$(whoami)/XentaOS/pengembangan/i386/root
-dir_dvd=/home/$(whoami)/XentaOS/pengembangan/i386/dvd
-dir_iso_release=/home/$(whoami)/XentaOS/perilisan/release/i386/
-dir_iso_tester=/home/$(whoami)/XentaOS/perilisan/tester/i386/
+dir_project=/home/project/pengembangan/i386/
+dir_root=/home/project/pengembangan/i386/root
+dir_dvd=/home/project/pengembangan/i386/dvd
+dir_iso_release=/home/project/perilisan/release/i386/
+dir_iso_tester=/home/project/perilisan/tester/i386/
 figlet makeiso.sh
+echo " Xenta Distro Builder"
+echo " "
 sudo rm -rf dvd/casper/initrd.lz
 sudo cp root/boot/initrd.img-$version_kernel-generic dvd/casper/initrd.lz
 sudo rm -rf dvd/casper/vmlinuz

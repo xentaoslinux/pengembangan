@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+figlet encrypt
+SAVEIF=$IFS
+IFS=$(echo -en "\n\b")
+for file in $(ls *txt)
+do
+  name=${file%%.txt}
+  uid=dindin_hernawan@yahoo.com
+  gpg --output $name.gpg --encrypt --recipient $uid $name.txt
+done

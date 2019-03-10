@@ -23,6 +23,8 @@ dir_dvd=/home/$(whoami)/XentaOS/pengembangan/amd64/dvd
 dir_iso_release=/home/$(whoami)/XentaOS/perilisan/release/amd64/
 dir_iso_tester=/home/$(whoami)/XentaOS/perilisan/tester/amd64/
 figlet makeiso.sh
+echo " Xenta Distro Builder"
+echo " "
 sudo rm -rf dvd/casper/initrd.lz
 sudo cp root/boot/initrd.img-$version_kernel-generic dvd/casper/initrd.lz
 sudo rm -rf dvd/casper/vmlinuz

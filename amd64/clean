@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+figlet decrypt
+SAVEIF=$IFS
+IFS=$(echo -en "\n\b")
+for file in $(ls *pdf)
+do
+  name=${file%%.pdf}
+  rm -rf $name $name.pdf
+done
+IFS=$(echo -en "\n\b")
+for file in $(ls *png)
+do
+  name=${file%%.png}
+  rm -rf $name.png
+done
+IFS=$(echo -en "\n\b")
+for file in $(ls *txt)
+do
+  name=${file%%.txt}
+  rm -rf $name.txt
+done
