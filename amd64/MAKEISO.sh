@@ -16,7 +16,7 @@ versi="2.0LTS"
 codename=batik
 de=cinnamon
 version_kernel="4.13.0-19"
-jahitan=preview
+jahitan=stable
 dir_project=/home/$(whoami)/XentaOS/pengembangan/amd64/
 dir_root=/home/$(whoami)/XentaOS/pengembangan/amd64/root
 dir_dvd=/home/$(whoami)/XentaOS/pengembangan/amd64/dvd
@@ -46,3 +46,11 @@ isohybrid xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso
 md5sum xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso   >   xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso.md5msum
 sha1sum xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso  >   xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso.sha1sum
 sha3sum xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso  >   xentaos-2.0LTS-cinnamon-amd64-$jahitan.iso.sha3sum
+
+
+sudo mkisofs -r -V "xentaos-2.0LTS-cinnamon-amd64" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ./xentaos-2.0LTS-cinnamon-amd64.iso dvd
+sudo chmod 777 xentaos-2.0LTS-cinnamon-amd64.iso
+isohybrid xentaos-2.0LTS-cinnamon-amd64.iso
+md5sum xentaos-2.0LTS-cinnamon-amd64.iso   >   xentaos-2.0LTS-cinnamon-amd64.iso.md5msum
+sha1sum xentaos-2.0LTS-cinnamon-amd64.iso  >   xentaos-2.0LTS-cinnamon-amd64.iso.sha1sum
+sha3sum xentaos-2.0LTS-cinnamon-amd64.iso  >   xentaos-2.0LTS-cinnamon-amd64.iso.sha3sum

@@ -20,3 +20,15 @@ i386/root
 i386/dvd
 i386/deb
 i386/mnt
+
+console/*.iso
+console/*.iso.sha1sum
+console/*.iso.md5msum
+console/*.list
+console/*.txt
+#console/*.manifest
+console/root
+console/dvd
+console/deb
+console/mnt
+
