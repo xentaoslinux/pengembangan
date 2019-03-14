@@ -1,0 +1,123 @@
+dindin@G41TR3 ~ $ sudo apt-get autoremove virtualbox-dkms
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  kbuild module-assistant virtualbox-source
+The following packages will be REMOVED:
+  virtualbox-dkms
+The following NEW packages will be installed:
+  kbuild module-assistant virtualbox-source
+0 upgraded, 3 newly installed, 1 to remove and 0 not upgraded.
+Need to get 1.495 kB of archives.
+After this operation, 1.157 kB disk space will be freed.
+Do you want to continue? [Y/n] 
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 kbuild amd64 1:0.1.9998svn2814+dfsg-2~ubuntu16.04.1 [629 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial/universe amd64 module-assistant all 0.11.8 [90,1 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 virtualbox-source all 5.1.38-dfsg-0ubuntu1.16.04.2 [776 kB]
+Fetched 1.495 kB in 9s (159 kB/s)                                                                                                                                       
+Selecting previously unselected package kbuild.
+(Reading database ... 196457 files and directories currently installed.)
+Preparing to unpack .../kbuild_1%3a0.1.9998svn2814+dfsg-2~ubuntu16.04.1_amd64.deb ...
+Unpacking kbuild (1:0.1.9998svn2814+dfsg-2~ubuntu16.04.1) ...
+Selecting previously unselected package module-assistant.
+Preparing to unpack .../module-assistant_0.11.8_all.deb ...
+Unpacking module-assistant (0.11.8) ...
+Selecting previously unselected package virtualbox-source.
+Preparing to unpack .../virtualbox-source_5.1.38-dfsg-0ubuntu1.16.04.2_all.deb ...
+Unpacking virtualbox-source (5.1.38-dfsg-0ubuntu1.16.04.2) ...
+Processing triggers for man-db (2.7.5-1) ...
+dpkg: virtualbox-dkms: dependency problems, but removing anyway as you requested:
+ virtualbox depends on virtualbox-dkms (>= 5.1.38-dfsg-0ubuntu1.16.04.2) | virtualbox-source (>= 5.1.38-dfsg-0ubuntu1.16.04.2) | virtualbox-modules; however:
+  Package virtualbox-dkms is to be removed.
+  Package virtualbox-source is not configured yet.
+  Package virtualbox-modules is not installed.
+  Package virtualbox-dkms which provides virtualbox-modules is to be removed.
+ virtualbox depends on virtualbox-dkms (>= 5.1.38-dfsg-0ubuntu1.16.04.2) | virtualbox-source (>= 5.1.38-dfsg-0ubuntu1.16.04.2) | virtualbox-modules; however:
+  Package virtualbox-dkms is to be removed.
+  Package virtualbox-source is not configured yet.
+  Package virtualbox-modules is not installed.
+  Package virtualbox-dkms which provides virtualbox-modules is to be removed.
+
+(Reading database ... 196681 files and directories currently installed.)
+Removing virtualbox-dkms (5.1.38-dfsg-0ubuntu1.16.04.2) ...
+
+------------------------------
+Deleting module version: 5.1.38
+completely from the DKMS tree.
+------------------------------
+Done.
+Setting up kbuild (1:0.1.9998svn2814+dfsg-2~ubuntu16.04.1) ...
+Setting up module-assistant (0.11.8) ...
+Setting up virtualbox-source (5.1.38-dfsg-0ubuntu1.16.04.2) ...
+dindin@G41TR3 ~ $ sudo apt-get install build-essential linux-headers-`uname -r` dkms virtualbox-dkms
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+build-essential is already the newest version (12.1ubuntu2).
+dkms is already the newest version (2.2.0.3-2ubuntu11.6).
+The following additional packages will be installed:
+  linux-headers-4.13.0-19
+The following NEW packages will be installed:
+  linux-headers-4.13.0-19 linux-headers-4.13.0-19-generic virtualbox-dkms
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 11,4 MB/12,1 MB of archives.
+After this operation, 88,3 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-4.13.0-19 all 4.13.0-19.22~16.04.1 [10,7 MB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-4.13.0-19-generic amd64 4.13.0-19.22~16.04.1 [711 kB]                                    
+Fetched 11,4 MB in 16s (713 kB/s)                                                                                                                                       
+Selecting previously unselected package linux-headers-4.13.0-19.
+(Reading database ... 196398 files and directories currently installed.)
+Preparing to unpack .../linux-headers-4.13.0-19_4.13.0-19.22~16.04.1_all.deb ...
+Unpacking linux-headers-4.13.0-19 (4.13.0-19.22~16.04.1) ...
+Selecting previously unselected package linux-headers-4.13.0-19-generic.
+Preparing to unpack .../linux-headers-4.13.0-19-generic_4.13.0-19.22~16.04.1_amd64.deb ...
+Unpacking linux-headers-4.13.0-19-generic (4.13.0-19.22~16.04.1) ...
+Selecting previously unselected package virtualbox-dkms.
+Preparing to unpack .../virtualbox-dkms_5.1.38-dfsg-0ubuntu1.16.04.2_all.deb ...
+Unpacking virtualbox-dkms (5.1.38-dfsg-0ubuntu1.16.04.2) ...
+Setting up linux-headers-4.13.0-19 (4.13.0-19.22~16.04.1) ...
+Setting up linux-headers-4.13.0-19-generic (4.13.0-19.22~16.04.1) ...
+Examining /etc/kernel/header_postinst.d.
+run-parts: executing /etc/kernel/header_postinst.d/dkms 4.13.0-19-generic /boot/vmlinuz-4.13.0-19-generic
+Setting up virtualbox-dkms (5.1.38-dfsg-0ubuntu1.16.04.2) ...
+Loading new virtualbox-5.1.38 DKMS files...
+First Installation: checking all kernels...
+Building only for 4.13.0-19-generic
+Building initial module for 4.13.0-19-generic
+Done.
+
+vboxdrv:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.13.0-19-generic/updates/
+
+vboxnetadp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.13.0-19-generic/updates/
+
+vboxnetflt.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.13.0-19-generic/updates/
+
+vboxpci.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.13.0-19-generic/updates/
+
+depmod....
+
+DKMS: install completed.
+dindin@G41TR3 ~ $  sudo modprobe vboxdrv
+dindin@G41TR3 ~ $  sudo modprobe vboxnetflt
