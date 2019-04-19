@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+figlet clearsign
+gpg --clearsign pin-chat.txt
+gpg --clearsign chat-materi.txt
