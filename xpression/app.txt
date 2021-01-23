@@ -1,0 +1,4 @@
+wps
+zoom
+firefox
+pdf
