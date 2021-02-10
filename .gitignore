@@ -168,3 +168,15 @@ console/canting/dvd
 console/canting/deb
 console/canting/mnt
 
+xpression/*.iso
+xpression/*.iso.sha1sum
+xpression/*.iso.md5msum
+xpression/*.list
+xpression/*.txt
+xpression/*.manifest
+xpression/root
+xpression/dvd
+xpression/deb
+xpression/mnt
+
+
