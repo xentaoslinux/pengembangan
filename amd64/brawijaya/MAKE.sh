@@ -12,8 +12,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-versi="2.0LTS"
-codename=batik
+versi="3"
+codename=brawijaya
 de=cinnamon
 dir_project=/home/project/pengembangan/amd64/
 dir_root=/home/project/pengembangan/amd64/root
