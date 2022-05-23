@@ -1,0 +1,2 @@
+Bahan :
+- ISO Linux Mint 19.1 amd64 Cinnamon http://free.nchc.org.tw/linuxmint/isos/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso
