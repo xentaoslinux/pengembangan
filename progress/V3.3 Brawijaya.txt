@@ -1,4 +1,2 @@
 Bahan :
 - ISO Linux Mint 19.1 amd64
-Wallpaper :
-- Brawijaya
