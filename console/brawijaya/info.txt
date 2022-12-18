@@ -1,0 +1,11 @@
+based ; debian
+code name ; bullseye
+debian version ; 11
+repository ; http://ftp.us.debian.org/debian/
+
+LTS
+https://wiki.debian.org/LTS
+Future LTS Release(s)
+Debian 11 “Bullseye”
+i386, amd64, armhf and arm64
+To be defined: roughly July 2024 to June 2026 

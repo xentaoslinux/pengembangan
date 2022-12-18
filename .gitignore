@@ -128,7 +128,7 @@ console/brawijaya/*.iso
 console/brawijaya/*.iso.sha1sum
 console/brawijaya/*.iso.md5msum
 console/brawijaya/*.list
-console/brawijaya/*.txt
+#console/brawijaya/*.txt
 #console/brawijaya/*.manifest
 console/brawijaya/root
 console/brawijaya/dvd
