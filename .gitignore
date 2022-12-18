@@ -31,6 +31,7 @@ console/root
 console/dvd
 console/deb
 console/mnt
+console/brawijaya/root
 
 # Ignore From Lokal
 amd64/arok/*.iso

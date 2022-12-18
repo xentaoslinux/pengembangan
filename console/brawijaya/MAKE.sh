@@ -14,7 +14,7 @@
 
 versi="3"
 codename=brawijaya
-de=cinnamon
+de=xorg
 dir_project=/home/project/pengembangan/console/
 dir_root=/home/project/pengembangan/console/root
 dir_dvd=/home/project/pengembangan/console/dvd
@@ -25,8 +25,8 @@ echo " Xenta Distro Builder"
 echo " "
 cd /home/project/pengembangan/console/
 sudo mkdir dvd root
-sudo debootstrap --arch=i386 --variant=minbase bionic /home/project/pengembangan/console/root http://archive.ubuntu.com/ubuntu/
+sudo debootstrap --arch=i386 --variant=minbase bullseye ./root http://ftp.us.debian.org/debian/
 cd dvd
-sudo mkdir casper .disk isolinux
+sudo mkdir live .disk isolinux
 sudo cp /usr/lib/syslinux/modules/bios/Idllinux.c32 /home/project/pengembangan/console/dvd/isolinux/
 sudo cp /home/project/pengembangan/console/root/boot/memtest86+.bin /home/project/pengembangan/console/dvd/memtest

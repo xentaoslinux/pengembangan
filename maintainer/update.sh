@@ -11,7 +11,7 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 repository=pengembangan
-update="Update"
+update="Pembaharuan Project ; Brawijaya"
 figlet $repository
 cd ..
 echo "Set Remote $team..."
