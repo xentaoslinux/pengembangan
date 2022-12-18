@@ -106,7 +106,7 @@ amd64/brawijaya/*.iso
 amd64/brawijaya/*.iso.sha1sum
 amd64/brawijaya/*.iso.md5msum
 amd64/brawijaya/*.list
-amd64/brawijaya/*.txt
+#amd64/brawijaya/*.txt
 #amd64/brawijaya/*.manifest
 amd64/brawijaya/root
 amd64/brawijaya/dvd
